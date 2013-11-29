@@ -1,0 +1,3 @@
+[user = test2]
+[operation = search]
+[password = test2pass]

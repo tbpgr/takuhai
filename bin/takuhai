@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+require 'takuhai/version'
+require 'takuhai_core'
+require "thor"
+
+module Takuhai
+  #= Takuhai CLI
+  class CLI < Thor
+    class_option :help, :type => :boolean, :aliases => '-h', :desc => 'help message.'
+    class_option :version, :type => :boolean, :desc => 'version'
+    default_task :collect
+
+    desc "collect", "downloads files from remote server by ssh/scp command"
+    def collect
+      Takuhai::Core.new.collect
+    end
+
+    desc "init", "generate Takuhaifile"
+    def init
+      Takuhai::Core.new.init
+    end
+
+    desc "version", "version"
+    def version
+      p Takuhai::VERSION
+    end
+  end
+end
+
+Takuhai::CLI.start(ARGV)

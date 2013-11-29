@@ -1,0 +1,14 @@
+# encoding: utf-8
+user "app"
+server "192.168.11.11"
+targets "file*txt"
+# targets "file1.txt file2.txt file3.txt"
+target_dir "/home/app/some_product/log"
+output_base_name "masked_files"
+output_extension "txt"
+block do |file, line|
+  if line.match /\[password = (.*)\]/
+    line.gsub!($1, '*'*$1.size)
+  end
+  line
+end
