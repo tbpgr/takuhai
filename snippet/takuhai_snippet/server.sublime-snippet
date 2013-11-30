@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+server ${1:server}
+]]></content>
+  <tabTrigger>server</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>server method</description>
+</snippet>

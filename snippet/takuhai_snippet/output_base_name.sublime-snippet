@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+output_base_name ${1:output_base_name}
+]]></content>
+  <tabTrigger>output_base_name</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>output_base_name method</description>
+</snippet>

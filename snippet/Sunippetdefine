@@ -1,0 +1,12 @@
+# encoding: utf-8
+
+output_path '.'
+scope "source.ruby"
+
+add :user, :user
+add :server, :server
+add :targets, :targets
+add :target_dir, :target_dir
+add :output_base_name, :output_base_name
+add :output_extension, :output_extension
+add :block, :block

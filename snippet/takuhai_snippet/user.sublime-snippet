@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+user ${1:user}
+]]></content>
+  <tabTrigger>user</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>user method</description>
+</snippet>

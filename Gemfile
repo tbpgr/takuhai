@@ -4,3 +4,4 @@ gemspec
 gem "rspec", "~> 2.14.1"
 gem "thor", "~> 0.18.1"
 gem "simplecov", "~> 0.8.2"
+gem "sublime_sunippetter", "~> 0.0.2"
