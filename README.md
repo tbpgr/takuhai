@@ -1,5 +1,7 @@
 # Takuhai
 
+[![Gem Version](https://badge.fury.io/rb/takuhai.svg)](http://badge.fury.io/rb/takuhai)
+
 Takuhai downloads files from remote server by ssh/scp command.
 
 After download, you can add any logic for each line.
